@@ -1,0 +1,55 @@
+//out: false
+
+.project_container{
+    max-width: 1900px;
+    margin: 0 auto;
+    .pr_row{
+        display: flex;
+        .work_pr{
+            position: relative;
+            img{
+                width: 99%;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            .pr_name_hover{
+                position: absolute;
+                background-color: @tomat;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: 0.5s;
+                margin-bottom: 0 !important;
+                padding-bottom: 0 !important;
+                overflow: hidden;
+                &:hover{
+                    opacity: 0.;
+                }
+                .link_work{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    .text_top{
+                        font-family: Raleway;
+                        font-size: 14px;
+                        color: @white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin-bottom: 14px;
+                    }
+                    .text_bottom{
+                        font-family: Raleway;
+                        font-size: 14px;
+                        color: #ffffff;
+                        font-weight: 200;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }  
+}

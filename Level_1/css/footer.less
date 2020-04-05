@@ -1,0 +1,63 @@
+//out: false
+
+.bottom_part_first {
+    margin-bottom: 0;
+    background-image: url(../img/Img_1.png);
+    .footer_first {
+        margin-bottom: 0;
+        text-align: center;        
+        display: flex;
+        justify-content: space-around;
+        .text {
+            width: 25%;
+            margin-top: 56px;
+            margin-bottom: 56px;
+            font-family: 'Raleway-Bold';
+        }
+        .social_media {
+            margin-top: 56px;
+            margin-bottom: 56px;
+            .person_pages{
+                text-align: center;
+                a:hover, a:focus {
+                    color: @tomat;
+                    border: 1px solid @tomat;
+                    text-decoration: none;
+                }                
+                .fa {
+                    color: @white;
+                    border: 1px solid @white;
+                    padding: 14px;
+                    margin-right: 4px;
+                    border-radius: 5px;
+                }
+                .fa-facebook {
+                    padding: 14px 18px;
+                }
+            }
+        }
+    }
+}
+.bottom_part_second {
+    background-image: url(../img/footer.png);
+    margin-bottom: 0;
+    background-size: cover;
+    .footer_first {
+        text-align: center;
+    }
+    .footer_second {
+        margin-bottom: 0;
+        text-align: center;
+        p {
+            padding-top: 28px;
+            font-family: 'Raleway-Bold';
+        }
+        .padding_none {
+            padding-top: 0;
+            padding-bottom: 28px;
+            .fa-heart {
+                color: @tomat;
+            }
+        }
+    }
+}

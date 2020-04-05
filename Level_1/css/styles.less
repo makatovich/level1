@@ -1,0 +1,109 @@
+// out: ./styles.css
+@import "./color.less";
+@import "./features.less";
+@import "./team.less";
+@import "./clients.less";
+@import "./download.less";
+@import "./footer.less";
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url(../fonts/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: 'Cardo-Italic';
+    src: url(../fonts/Cardo-Italic.ttf);
+}
+
+html {
+    font-size: 14px;
+}
+p {
+    font-family: Raleway-Regular;
+    color: @grey;
+}
+img {
+    margin-bottom: 28px;
+}
+.container {
+    max-width: 1900px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.width_max {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fa {
+    color: @grey;
+    font-size: 20px;
+}
+.max {
+    font-family: Raleway-Bold;
+    color: @black;
+    text-transform: uppercase;
+}
+.white{
+    color: @white;
+}
+section {
+    margin-bottom: 100px;
+}
+.btn_orange {
+    background-color:@tomat;
+    border-radius: 5px;
+    border: 2px solid @tomat;
+    padding: 20px 55px;
+}
+.btn_orange:hover {
+    background-color: @white;
+    color: @grey;
+    transform: scale(0.8);
+    transition: step-start;
+}
+a:hover, a:focus {
+    color: @tomat;
+    border: @tomat;
+    text-decoration: double;
+}
+.top_part {
+    background-image: url(../img/bk.png);
+    background-size: cover;
+    .header_panel {
+        max-width: 1400px ;
+        text-align: center;
+        border-bottom: 1px solid @grey;
+        display: flex;
+        justify-content: space-around;
+        img {
+            margin-top: 20px;
+        }
+        .nav_bar {
+            margin-top: 20px;
+        }
+    }
+    .text_with_btn {        
+        text-align: center;
+        .the_biggest {
+            font-size: 65px;
+        }
+        .bigger {
+            font-size: 20px;
+            margin-bottom: 80px;
+        }
+        button {
+            margin-bottom: 150px;
+            transition: 1s;
+        }
+    }
+}
+
